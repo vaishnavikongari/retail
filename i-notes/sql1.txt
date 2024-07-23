@@ -1,0 +1,97 @@
+create database 245322733190N;
+use 245322733190N;
+create table excersie1(eid int primary key , firstname varchar(20), lastname varchar(20),address varchar(20), City varchar(20),Age int);
+insert into excersie1 values(1,'Mickey','Mouse','123FantasyWay','Anaheilm', 73 );
+insert into excersie1 values(2,'Bat','Man','321 truthWay','Gotham', 54 );
+insert into excersie1 values(3,'Wonder','Woman','981 truthWay','Paradise', 39 );
+insert into excersie1 values(4,'Donald','Duck','555 Quack Street','Malland', 65 );
+insert into excersie1 values(5,'Bugs','Bunny','567 Carrot Street','Rascal', 50 );
+insert into excersie1 values(6,'Wiley','Coyote','999 Acme Way','Canyon', 61 );
+insert into excersie1 values(7,'Cat','Woman','234 Purrfect Street','Anaheilm', 32 );
+insert into excersie1 values(8,'Tweety','Bird','543','Itotlaw', 28 );
+select * from excersie1;
+
+
+create table Employee(employeeNumber int primary key , lastName varchar(20), firstName varchar(20),extension varchar(20), email varchar(50),officeCode int, reportsTo int, jobTitle varchar(20));
+insert into Employee values(1002,'Murphy','Dane','x5800','dmurphy@classicmodelcars.com', 1,NULL,'President' );
+insert into Employee values(1056,'Patterson','Mary','x4611','mpatterso@classicmodelcars.com', 1,1002,'VP Sales' );
+insert into Employee values(1076,'Firrelli','Jeff','x9273','jfirrelli@classicmodelcars.com', 1,1002,'VP Marketing' );
+insert into Employee values(1088,'Patterson','William','x4871','wpatterson@classicmodelcars.com', 6,1056,'Sales Manager(APAC)' );
+insert into Employee values(1102,'Bondur','Gerard','x5480','gbondur@classicmodelcars.com', 4,1056,'Sales Manager(EMEA)' );
+insert into Employee values(1143,'Bow','Anthony','x5428','abow@classicmodelcars.com', 1,1056,'Sales Manager(NA)' );
+insert into Employee values(1165,'Jennings','Leslie','x3291','ljennings@classicmodelcars.com', 1,1143,'Sales Rep' );
+insert into Employee values(1166,'Thompson','Leslie','x4065','lthompson@classicmodelcars.com', 1,1143,'Sales Rep' );
+insert into Employee values(1188,'Firrelli','Juile','x2173','djfirrelli@classicmodelcars.com', 2,1143,'Sales Rep' );
+insert into Employee values(1216,'Patterson','Steve','x4334','sppaterson@classicmodelcars.com', 2,1143,'Sales Rep' );
+insert into Employee values(1286,'Tseng','Foon Yue','x2248','ftseng@classicmodelcars.com', 3,1143,'Sales Rep' );
+insert into Employee values(1323,'Vanauf','George','x4102','gvanauf@classicmodelcars.com', 3,1143,'Sales Rep' );
+insert into Employee values(1337,'Bondur','Loul','x6493','lbondur@classicmodelcars.com', 4,1102,'Sales Rep' );
+insert into Employee values(1370,'Hemandez','Gerard','x2028','ghmande@classicmodelcars.com', 4,1102,'Sales Rep' );
+insert into Employee values(1401,'Castillo','Pamela','x2759','pcastillo@classicmodelcars.com', 4,1102,'Sales Rep' );
+insert into Employee values(1501,'Rott','Larry','x2311','lbgtt@classicmodelcars.com', 7,1102,'Sales Rep' );
+select * from Employee;
+
+create table planet(moon_id int , Nname varchar(20), year_discovered int, diameter_in_km int, planet varchar(20));
+INSERT INTO planet (moon_id, Nname, year_discovered, diameter_in_km, planet) VALUES
+(1, 'moon', NULL, 3476, 'earth'),
+(2, 'phobos', 1877, 23, 'mars'),
+(3, 'deimos', 1877, 13, 'mars'),
+(4, 'io', 1610, 3630, 'jupiter'),
+(5, 'europa', 1610, 3138, 'jupiter'),
+(6, 'ganymede', 1610, 5262, 'jupiter'),
+(7, 'callisto', 1610, 4800, 'jupiter'),
+(8, 'himalia', 1904, 170, 'jupiter'),
+(9, 'thebe', 1979, 98, 'jupiter'),
+(10, 'aegir', 2005, 6, 'saturn'),
+(11, 'suttungr', 2000, 7, 'saturn'),
+(12, 'anithe', 2007, 1, 'saturn'),
+(13, 'farbauti', 2004, 5, 'saturn'),
+(14, 'fenrir', 2004, 4, 'saturn'),
+(15, 'fornjot', 2004, 6, 'saturn'),
+(16, 'ariel', 1851, 1161, 'uranus'),
+(17, 'umbriel', 1851, 1169, 'uranus'),
+(18, 'oberon', 1787, 1523, 'uranus'),
+(19, 'puck', 1985, 154, 'uranus'),
+(20, 'perdita', 1999, 26, 'uranus'),
+(21, 'thalassa', 1989, 80, 'neptune');
+
+CREATE TABLE random_data (
+    RowId INT,
+    SomeInt INT,
+    SomeBit BIT,
+    SomeVarchar VARCHAR(50),
+    SomeDateTime DATETIME,
+    SomeNumeric DECIMAL(18, 2)
+);
+
+INSERT INTO random_data (RowId, SomeInt, SomeBit, SomeVarchar, SomeDateTime, SomeNumeric) VALUES
+(1, 1, 0, 'legpcaijgy', '2012-08-10 06:41:48.260', 52359.75),
+(2, 2, 0, 'fnqxscztrk', '2013-04-22 14:31:46.757', 85869.86),
+(3, 3, 0, 'dyvrwqcri', '2013-05-21 17:10:49.520', 39040.37),
+(4, 4, 0, 'bfhrnwcik', '2013-05-01 20:24:45.193', 44452.46),
+(5, 5, 0, 'epmcpscdto', '2013-09-13 13:08:49.573', 8542.48),
+(6, 6, 0, 'ktskpnqqam', '2012-12-12 11:41:44.283', 21917.62),
+(7, 7, 0, 'nqypnzogda', '2013-05-26 17:00:48.507', 66830.28),
+(8, 8, 0, 'ywrdbweuek', '2013-07-04 11:37:47.520', 37861.12),
+(9, 9, 0, 'czltrjsqoc', '2012-04-04 12:51:46.753', 14962.26),
+(10, 10, 0, 'yzmoxauydx', '2013-09-19 10:47:43.900', 69842.26);
+
+create table student(rollno int, branch varchar(250), section varchar(20), dateofbirth DATE);
+ALTER TABLE student ADD COLUMN name varchar(200);
+INSERT INTO student (rollno, name, branch, section, dateofbirth) VALUES 
+(1, 'John Doe', 'Computer Science', 'A', '1998-05-15'), 
+(2, 'Jane Smith', 'Electrical Engineering', 'B', '1997-09-22'), 
+(3, 'Alice Johnson', 'Mechanical Engineering', 'C', '1999-02-10'), 
+(4, 'Bob Brown', 'Civil Engineering', 'A', '1998-11-30'), 
+(5, 'Emily Davis', 'Chemical Engineering', 'B', '1997-07-25'), 
+(6, 'Michael Wilson', 'Computer Science', 'C', '1999-04-05'), 
+(7, 'Sarah Taylor', 'Electronics and Communication', 'A', '1998-10-18'), 
+(8, 'David Martinez', 'Information Technology', 'B', '1997-03-12'),
+(9, 'Jessica Anderson', 'Aerospace Engineering', 'C', '1999-08-20'), 
+(10, 'Ryan Garcia', 'Biomedical Engineering', 'A', '1998-01-08');
+
+SELECT name FROM student;
+SELECT DISTINCT branch FROM student;
+SELECT name, branch FROM student WHERE branch = 'Computer Science';
+SELECT section, COUNT(*) as count FROM student GROUP BY section;
+SELECT AVG(DATEDIFF('2024-05-02', dateofbirth) / 365) AS avg_age FROM student;
